@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/*Base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    text-align: center;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/*Utilities*/
+
+.container{
+    max-width: 180rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+/*Header & Nav*/
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.nav{
+    height: 10rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item{
+    margin-right: 5rem;
+}
+
+.nav-link{
+    font-size: 2rem;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.nav-link:hover{
+    opacity: 0.6;
+}
+
+.logo{
+    display: block;
+    width: 15rem;
+}
+
+
+h1{
+    color: white;
+}
+
+/*Main content*/
+
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: top;
+    margin-top: 20rem;
+    z-index: 1;
+}
+.landing-page:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: inherit;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.content-details{
+    max-width: 80%;
+}
+
+.title{
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.description{
+    color: #929FC5;
+    margin-bottom: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.footer-img{
+    display: block;
+    text-align: center;
+}
+
+.img-last{
+    max-width: 250px;
+}
+
+.feature-img{
+    max-width: 250px;
+    margin: 20px;
+}
+
+.sub{
+    border: solid;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: #01abdd;
+    border-color: #01abdd;
+}
+
+@media only screen and (max-width: 768px) {
+    .content{
+        display: block;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
+    
+    .box{
+        display: block;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    
+    .description{
+        color: #929FC5;
+        margin-bottom: 3rem;
+    }
+    .hero-image{
+        margin: 30px;
+    }
+    .tv{
+        margin: 30px;
+    }
+    .img-last{
+        margin-top: 10rem;
+    }
+}
